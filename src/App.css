@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: var(--DarkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: var(--DarkGrayishBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 540px;
+  padding: 3rem 2rem 4.5rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+p {
+  text-transform: uppercase;
+  color: var(--NeonGreen);
+  letter-spacing: 3.5px;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+h2 {
+  color: var(--LightCyan);
+  font-size: 28px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.dice {
+  background: var(--NeonGreen);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: -2rem;
+}
+.dice:hover {
+  box-shadow: 0 0 40px 0 var(--NeonGreen);
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .card {
+    max-width: 335px;
+  }
+}
+
+.attribution {
+  color: var(--LightCyan);
+  text-align: center;
+  text-transform: none;
+  margin-top: 50px;
+}
+.attribution a {
+  color: var(--LightCyan);
+}
+.attribution a:hover {
+  color: var(--NeonGreen);
+}
